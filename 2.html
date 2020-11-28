@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal nomer 2</title>
+  </head>
+
+  <body>
+    <h2>SOAL NO 2</h2>
+    <h4>TEST DUMBWAYS BATCH 20 KLOTER 1</h4>
+    <script>
+      let input = prompt("Masukan nilai (abcde) atau (12345)");
+      let arr = input.split(""); //untuk merubah string menjadi array
+
+      function putarArray() {
+        // untuk mengulang pemutaran
+        for (let i = 1; i <= 4; i++) {
+          let arr_awal = arr[0]; // untuk menyimpan nilai array awal agar tidak di remove
+          arr.shift(); // untuk meremove array awal
+          arr = [...arr, arr_awal];
+          document.write("Putaran " + i + " : " + arr);
+          document.write("<br>");
+        }
+      }
+      putarArray(arr);
+    </script>
+  </body>
+</html>

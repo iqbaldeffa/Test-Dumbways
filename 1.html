@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contoh</title>
+  </head>
+
+  <body>
+    <h2>SOAL NO 1</h2>
+    <h4>TEST DUMBWAYS BATCH 20 KLOTER 1</h4>
+    <script>
+      let input = parseInt(prompt("masukan jumlah kalori"));
+      let waktu = Math.floor(input / 10);
+
+      document.write("Jumlah Kalori = " + input);
+      document.write("<br>");
+
+      if (input >= 750) {
+        document.write("Jenis Olahraga = lari");
+      } else if (input >= 500) {
+        document.write("Jenis Olahraga = badminton");
+      } else {
+        document.write("Jenis Olahraga = renang");
+      }
+      document.write("<br>");
+      document.write("Waktu Olahraga = " + waktu + "menit");
+    </script>
+  </body>
+</html>
